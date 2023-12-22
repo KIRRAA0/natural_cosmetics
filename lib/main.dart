@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'View/Screens/intro_screens/screen1.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,23 +15,6 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
       home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        flexibleSpace: Container(
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [Colors.indigoAccent, Colors.purpleAccent])),
-        ),
-      ),
     );
   }
 }
